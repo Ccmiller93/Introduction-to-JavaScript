@@ -1,33 +1,47 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-
+let votingAge = 19;
+if (votingAge >18) {
+    console.log(true)
+}
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-
+var one = "hello"
+var two = "bye"
+console.log(two)
+if (one == "hello")  {
+    two = "c ya"
+    console.log(two)
+}
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
-
-
+console.log( Number('1999'))
+console.log("1999")
 
 
 
 //Task d: Write a function to multiply a*b 
 
-
-
+function multiply(a,b) {
+    return a * b; 
+}
+console.log(multiply(2,5))
 
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-
+function dogAge(c) {
+    return c * 7;
+}
+console.log(dogAge(27))
 
 
 
@@ -67,13 +81,18 @@
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+function miles(km, mi) {
+    return km * 0.621371;
+}
 
-
-
+console.log(miles(2))
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+function feet(ft, cm) {
+    return ft * 30.48;
+}
+console.log(feet(3))
 
 
 
@@ -95,7 +114,19 @@
 //60s should be D 
 //and anything below 60 should be F
   
-
+let grade = Math.floor(Math.random() * 101); 
+if (grade >= 90) {
+    console.log("A")
+} else if (grade >= 80 && grade < 90) {
+    console.log("B")
+} else if (grade >= 70 && grade < 80) {
+    console.log("C")
+} else if (grade >= 60 && grade < 70) {
+    console.log("D")
+} else {
+    console.log("F")
+}
+console.log(grade);
   
   
 
