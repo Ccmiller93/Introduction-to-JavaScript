@@ -81,13 +81,18 @@ console.log(dogAge(27))
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+function miles(km, mi) {
+    return km * 0.621371;
+}
 
-
-
+console.log(miles(2))
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+function feet(ft, cm) {
+    return ft * 30.48;
+}
+console.log(feet(3))
 
 
 
@@ -109,7 +114,19 @@ console.log(dogAge(27))
 //60s should be D 
 //and anything below 60 should be F
   
-
+let grade = Math.floor(Math.random() * 101); 
+if (grade >= 90) {
+    console.log("A")
+} else if (grade >= 80 && grade < 90) {
+    console.log("B")
+} else if (grade >= 70 && grade < 80) {
+    console.log("C")
+} else if (grade >= 60 && grade < 70) {
+    console.log("D")
+} else {
+    console.log("F")
+}
+console.log(grade);
   
   
 
